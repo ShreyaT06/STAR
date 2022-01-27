@@ -1,4 +1,4 @@
-# STAR--Set-To-Augment-Result
+# STAR - Set To Augment Result
 
 Education enables a better understanding of various subjects and play a major role in instilling discipline and providing direction. 
 With pandemic, our physical classrooms have been converted to virtual classrooms highlighting that no matter what happens learning should never stop. 
