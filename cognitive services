@@ -1,0 +1,671 @@
+{
+    "id": "/subscriptions/54411a87-6d1c-490f-aa8c-4325ccb53253/resourceGroups/STAR-cs/providers/Microsoft.CognitiveServices/accounts/SetToAugmentResult",
+    "name": "SetToAugmentResult",
+    "type": "Microsoft.CognitiveServices/accounts",
+    "etag": "\"2b00ae35-0000-2000-0000-61f29f650000\"",
+    "systemData": {
+        "createdBy": "shreyathomas69@gmail.com",
+        "createdByType": "User",
+        "createdAt": "2022-01-27T13:34:26.638102Z",
+        "lastModifiedBy": "shreyathomas69@gmail.com",
+        "lastModifiedByType": "User",
+        "lastModifiedAt": "2022-01-27T13:34:26.638102Z"
+    },
+    "location": "centralindia",
+    "sku": {
+        "name": "S0"
+    },
+    "kind": "CognitiveServices",
+    "tags": {},
+    "properties": {
+        "endpoint": "https://settoaugmentresult.cognitiveservices.azure.com/",
+        "internalId": "957f4bfa652847e38b8e8ca1e7814efb",
+        "dateCreated": "2022-01-27T13:34:27.8168754Z",
+        "apiProperties": {},
+        "callRateLimit": {
+            "rules": [
+                {
+                    "key": "formrecognizer.custom.train",
+                    "renewalPeriod": 60,
+                    "count": 1,
+                    "dynamicThrottlingEnabled": false,
+                    "matchPatterns": [
+                        {
+                            "path": "formrecognizer/custom/train",
+                            "method": "*"
+                        }
+                    ]
+                },
+                {
+                    "key": "formrecognizer.custom.copymodels",
+                    "renewalPeriod": 60,
+                    "count": 1,
+                    "dynamicThrottlingEnabled": false,
+                    "matchPatterns": [
+                        {
+                            "path": "formrecognizer/custom/models/{modelId}/copy",
+                            "method": "*"
+                        }
+                    ]
+                },
+                {
+                    "key": "formrecognizer.custom.models.get",
+                    "renewalPeriod": 60,
+                    "count": 10,
+                    "dynamicThrottlingEnabled": false,
+                    "matchPatterns": [
+                        {
+                            "path": "formrecognizer/custom/models",
+                            "method": "GET"
+                        }
+                    ]
+                },
+                {
+                    "key": "formrecognizer.analyzeform",
+                    "renewalPeriod": 1,
+                    "count": 15,
+                    "dynamicThrottlingEnabled": false,
+                    "matchPatterns": [
+                        {
+                            "path": "formrecognizer/custom/models/{modelId}/analyze",
+                            "method": "POST"
+                        }
+                    ]
+                },
+                {
+                    "key": "formrecognizer.analyzeform.result",
+                    "renewalPeriod": 1,
+                    "count": 100,
+                    "dynamicThrottlingEnabled": false,
+                    "matchPatterns": [
+                        {
+                            "path": "formrecognizer/custom/models/{modelId}/analyzeResults/{resultId}",
+                            "method": "GET"
+                        }
+                    ]
+                },
+                {
+                    "key": "customvision.training",
+                    "renewalPeriod": 1,
+                    "count": 10,
+                    "dynamicThrottlingEnabled": false,
+                    "matchPatterns": [
+                        {
+                            "path": "customvision/v3.0/training/*",
+                            "method": "*"
+                        },
+                        {
+                            "path": "customvision/v3.1/training/*",
+                            "method": "*"
+                        },
+                        {
+                            "path": "customvision/v3.2/training/*",
+                            "method": "*"
+                        },
+                        {
+                            "path": "customvision/v3.3/training/*",
+                            "method": "*"
+                        },
+                        {
+                            "path": "customvision/v3.4-preview/training/*",
+                            "method": "*"
+                        }
+                    ]
+                },
+                {
+                    "key": "customvision.prediction",
+                    "renewalPeriod": 1,
+                    "count": 10,
+                    "dynamicThrottlingEnabled": false,
+                    "matchPatterns": [
+                        {
+                            "path": "customvision/v3.0/prediction/*",
+                            "method": "*"
+                        },
+                        {
+                            "path": "customvision/v3.1/prediction/*",
+                            "method": "*"
+                        }
+                    ]
+                },
+                {
+                    "key": "speech.synthesize",
+                    "renewalPeriod": 1,
+                    "count": 200,
+                    "dynamicThrottlingEnabled": false,
+                    "matchPatterns": [
+                        {
+                            "path": "speech/synthesize",
+                            "method": "*"
+                        }
+                    ]
+                },
+                {
+                    "key": "speech.customvoicesynthesize",
+                    "renewalPeriod": 1,
+                    "count": 200,
+                    "dynamicThrottlingEnabled": false,
+                    "matchPatterns": [
+                        {
+                            "path": "speech/customvoicesynthesize",
+                            "method": "*"
+                        }
+                    ]
+                },
+                {
+                    "key": "speech.neuralvoicesynthesize",
+                    "renewalPeriod": 1,
+                    "count": 200,
+                    "dynamicThrottlingEnabled": false,
+                    "matchPatterns": [
+                        {
+                            "path": "speech/neuralvoicesynthesize",
+                            "method": "*"
+                        }
+                    ]
+                },
+                {
+                    "key": "speech.customneuralvoicesynthesize",
+                    "renewalPeriod": 1,
+                    "count": 200,
+                    "dynamicThrottlingEnabled": false,
+                    "matchPatterns": [
+                        {
+                            "path": "speech/customneuralvoicesynthesize",
+                            "method": "*"
+                        }
+                    ]
+                },
+                {
+                    "key": "speech.conversationtranscription",
+                    "renewalPeriod": 1,
+                    "count": 100,
+                    "dynamicThrottlingEnabled": false,
+                    "matchPatterns": [
+                        {
+                            "path": "speech/singlechannelaudioconversationtranscription",
+                            "method": "*"
+                        },
+                        {
+                            "path": "speech/multichannelaudioconversationtranscribe",
+                            "method": "*"
+                        },
+                        {
+                            "path": "speech/videoconversationtranscribe",
+                            "method": "*"
+                        }
+                    ]
+                },
+                {
+                    "key": "speech.speechtotext",
+                    "renewalPeriod": 10,
+                    "count": 100,
+                    "dynamicThrottlingEnabled": false,
+                    "matchPatterns": [
+                        {
+                            "path": "speechtotext/*",
+                            "method": "*"
+                        }
+                    ]
+                },
+                {
+                    "key": "speech.texttospeech",
+                    "renewalPeriod": 10,
+                    "count": 100,
+                    "dynamicThrottlingEnabled": false,
+                    "matchPatterns": [
+                        {
+                            "path": "texttospeech/*",
+                            "method": "*"
+                        }
+                    ]
+                },
+                {
+                    "key": "speech.speakerrecognitionv2",
+                    "renewalPeriod": 1,
+                    "count": 20,
+                    "dynamicThrottlingEnabled": false,
+                    "matchPatterns": [
+                        {
+                            "path": "speaker/*",
+                            "method": "*"
+                        }
+                    ]
+                },
+                {
+                    "key": "speech.speakerrecognitionv1",
+                    "renewalPeriod": 1,
+                    "count": 5,
+                    "dynamicThrottlingEnabled": false,
+                    "matchPatterns": [
+                        {
+                            "path": "spid/*",
+                            "method": "*"
+                        }
+                    ]
+                },
+                {
+                    "key": "docmentTranslation",
+                    "renewalPeriod": 1,
+                    "count": 20,
+                    "dynamicThrottlingEnabled": false,
+                    "matchPatterns": [
+                        {
+                            "path": "translator/text/batch/*",
+                            "method": "*"
+                        }
+                    ]
+                },
+                {
+                    "key": "textTranslation",
+                    "renewalPeriod": 1,
+                    "count": 100,
+                    "dynamicThrottlingEnabled": false,
+                    "matchPatterns": [
+                        {
+                            "path": "translator/text/*",
+                            "method": "*"
+                        }
+                    ]
+                },
+                {
+                    "key": "token",
+                    "renewalPeriod": 1,
+                    "count": 100,
+                    "dynamicThrottlingEnabled": false,
+                    "matchPatterns": [
+                        {
+                            "path": "sts/v1.0/*",
+                            "method": "*"
+                        }
+                    ]
+                },
+                {
+                    "key": "ListManagement",
+                    "renewalPeriod": 1,
+                    "count": 15,
+                    "dynamicThrottlingEnabled": false,
+                    "matchPatterns": [
+                        {
+                            "path": "contentmoderator/lists/v1.0/*",
+                            "method": "*"
+                        }
+                    ]
+                },
+                {
+                    "key": "Moderate",
+                    "renewalPeriod": 1,
+                    "count": 20,
+                    "dynamicThrottlingEnabled": false,
+                    "matchPatterns": [
+                        {
+                            "path": "contentmoderator/moderate/v1.0/*",
+                            "method": "*"
+                        }
+                    ]
+                },
+                {
+                    "key": "Review",
+                    "renewalPeriod": 1,
+                    "count": 20,
+                    "dynamicThrottlingEnabled": false,
+                    "matchPatterns": [
+                        {
+                            "path": "contentmoderator/review/v1.0/*",
+                            "method": "*"
+                        }
+                    ]
+                },
+                {
+                    "key": "luis.endpoint",
+                    "renewalPeriod": 1,
+                    "count": 50,
+                    "dynamicThrottlingEnabled": false,
+                    "matchPatterns": [
+                        {
+                            "path": "luis/*",
+                            "method": "*"
+                        },
+                        {
+                            "path": "luis/prediction/*",
+                            "method": "*"
+                        }
+                    ]
+                },
+                {
+                    "key": "workflow.endpoint.postcalls",
+                    "renewalPeriod": 60,
+                    "count": 60,
+                    "dynamicThrottlingEnabled": false,
+                    "matchPatterns": [
+                        {
+                            "path": "/language/:analyze-conversations",
+                            "method": "*"
+                        }
+                    ]
+                },
+                {
+                    "key": "textAnalytics.unifiedAuthoring",
+                    "renewalPeriod": 60,
+                    "count": 100,
+                    "dynamicThrottlingEnabled": false,
+                    "matchPatterns": [
+                        {
+                            "path": "language/text/authoring/v1.0-preview.1/*",
+                            "method": "*"
+                        }
+                    ]
+                },
+                {
+                    "key": "textAnalytics.unifiedAuthoring.getcalls",
+                    "renewalPeriod": 60,
+                    "count": 100,
+                    "dynamicThrottlingEnabled": false,
+                    "matchPatterns": [
+                        {
+                            "path": "language/text/authoring/v1.0-preview.2/*",
+                            "method": "GET"
+                        }
+                    ]
+                },
+                {
+                    "key": "textAnalytics.unifiedAuthoring.updatecalls",
+                    "renewalPeriod": 60,
+                    "count": 10,
+                    "dynamicThrottlingEnabled": false,
+                    "matchPatterns": [
+                        {
+                            "path": "language/text/authoring/v1.0-preview.2/*",
+                            "method": "*"
+                        }
+                    ]
+                },
+                {
+                    "key": "textAnalytics.unifiedAuthoring.clu.getCalls",
+                    "renewalPeriod": 60,
+                    "count": 100,
+                    "dynamicThrottlingEnabled": false,
+                    "matchPatterns": [
+                        {
+                            "path": "language/customize-conversation/*",
+                            "method": "GET"
+                        }
+                    ]
+                },
+                {
+                    "key": "textAnalytics.unifiedAuthoring.clu.updateCalls",
+                    "renewalPeriod": 60,
+                    "count": 10,
+                    "dynamicThrottlingEnabled": false,
+                    "matchPatterns": [
+                        {
+                            "path": "language/customize-conversation/*",
+                            "method": "*"
+                        }
+                    ]
+                },
+                {
+                    "key": "textAnalytics.customText",
+                    "renewalPeriod": 60,
+                    "count": 100,
+                    "dynamicThrottlingEnabled": false,
+                    "matchPatterns": [
+                        {
+                            "path": "text/analytics/v3.1-preview.ct.1/analyze/*",
+                            "method": "*"
+                        }
+                    ]
+                },
+                {
+                    "key": "textAnalytics.analyze",
+                    "renewalPeriod": 60,
+                    "count": 300,
+                    "dynamicThrottlingEnabled": false,
+                    "matchPatterns": [
+                        {
+                            "path": "text/analytics/v3.1/analyze/*",
+                            "method": "*"
+                        },
+                        {
+                            "path": "text/analytics/v3.2-preview.1/analyze/*",
+                            "method": "*"
+                        },
+                        {
+                            "path": "text/analytics/v3.2-preview.2/analyze/*",
+                            "method": "*"
+                        }
+                    ]
+                },
+                {
+                    "key": "textAnalytics.healthcare",
+                    "renewalPeriod": 60,
+                    "count": 300,
+                    "dynamicThrottlingEnabled": false,
+                    "matchPatterns": [
+                        {
+                            "path": "text/analytics/v3.1/entities/health/*",
+                            "method": "*"
+                        },
+                        {
+                            "path": "text/analytics/v3.2-preview.1/health/*",
+                            "method": "*"
+                        },
+                        {
+                            "path": "text/analytics/v3.2-preview.2/health/*",
+                            "method": "*"
+                        }
+                    ]
+                },
+                {
+                    "key": "textAnalytics",
+                    "renewalPeriod": 60,
+                    "count": 1000,
+                    "dynamicThrottlingEnabled": false,
+                    "matchPatterns": [
+                        {
+                            "path": "text/analytics/*",
+                            "method": "*"
+                        }
+                    ]
+                },
+                {
+                    "key": "questionanswering",
+                    "renewalPeriod": 60,
+                    "count": 600,
+                    "dynamicThrottlingEnabled": false,
+                    "matchPatterns": [
+                        {
+                            "path": "qnamaker/*",
+                            "method": "*"
+                        }
+                    ]
+                },
+                {
+                    "key": "unifiedlanguage.questionanswering",
+                    "renewalPeriod": 60,
+                    "count": 600,
+                    "dynamicThrottlingEnabled": false,
+                    "matchPatterns": [
+                        {
+                            "path": "language/query-knowledgebases/*",
+                            "method": "*"
+                        },
+                        {
+                            "path": "language/:query-*",
+                            "method": "*"
+                        }
+                    ]
+                },
+                {
+                    "key": "vision.recognizeText",
+                    "renewalPeriod": 1,
+                    "count": 30,
+                    "dynamicThrottlingEnabled": false,
+                    "matchPatterns": [
+                        {
+                            "path": "vision/recognizeText",
+                            "method": "POST"
+                        },
+                        {
+                            "path": "vision/textOperations/*",
+                            "method": "GET"
+                        },
+                        {
+                            "path": "vision/read/*",
+                            "method": "*"
+                        }
+                    ]
+                },
+                {
+                    "key": "vision",
+                    "renewalPeriod": 1,
+                    "count": 15,
+                    "dynamicThrottlingEnabled": false,
+                    "matchPatterns": [
+                        {
+                            "path": "vision/*",
+                            "method": "*"
+                        }
+                    ]
+                },
+                {
+                    "key": "face",
+                    "renewalPeriod": 1,
+                    "count": 15,
+                    "dynamicThrottlingEnabled": false,
+                    "matchPatterns": [
+                        {
+                            "path": "face/*",
+                            "method": "*"
+                        }
+                    ]
+                },
+                {
+                    "key": "bingVisualSearch",
+                    "renewalPeriod": 1,
+                    "count": 30,
+                    "dynamicThrottlingEnabled": false,
+                    "matchPatterns": [
+                        {
+                            "path": "bing/v7.0/images/visualsearch/*",
+                            "method": "*"
+                        }
+                    ]
+                },
+                {
+                    "key": "bingSearch",
+                    "renewalPeriod": 1,
+                    "count": 250,
+                    "dynamicThrottlingEnabled": false,
+                    "matchPatterns": [
+                        {
+                            "path": "bing/*",
+                            "method": "*"
+                        }
+                    ]
+                },
+                {
+                    "key": "bingCustomSearch",
+                    "renewalPeriod": 1,
+                    "count": 150,
+                    "dynamicThrottlingEnabled": false,
+                    "matchPatterns": [
+                        {
+                            "path": "bingcustomsearch/*",
+                            "method": "*"
+                        }
+                    ]
+                },
+                {
+                    "key": "container.billing",
+                    "renewalPeriod": 10,
+                    "count": 500,
+                    "dynamicThrottlingEnabled": false,
+                    "matchPatterns": [
+                        {
+                            "path": "billing/*",
+                            "method": "*"
+                        }
+                    ]
+                },
+                {
+                    "key": "default",
+                    "renewalPeriod": 1,
+                    "count": 20,
+                    "dynamicThrottlingEnabled": false,
+                    "matchPatterns": [
+                        {
+                            "path": "*",
+                            "method": "*"
+                        }
+                    ]
+                }
+            ]
+        },
+        "isMigrated": false,
+        "customSubDomainName": "settoaugmentresult",
+        "publicNetworkAccess": "Enabled",
+        "capabilities": [
+            {
+                "name": "Container",
+                "value": "Face.Face,ComputerVision.VideoAnalytics,TextAnalytics.Healthcare,TextAnalytics.Keyphrase,TextAnalytics.KeyphraseV2,TextAnalytics.KeyPhraseONNX,TextAnalytics.LanguageFastText,TextAnalytics.Language,TextAnalytics.LanguageV2,TextAnalytics.Sentiment,TextAnalytics.SentimentV2,TextAnalytics.SentimentV3,TextAnalytics.SentimentV3Preview,LUIS.LUIS"
+            },
+            {
+                "name": "Cloud",
+                "value": "TextAnalytics.Healthcare,TextAnalytics.Analyze,QuestionAnswer.AllApis,LanguageService.QuestionAnsweringApis"
+            }
+        ],
+        "endpoints": {
+            "Bing Autosuggest": "https://settoaugmentresult.cognitiveservices.azure.com/",
+            "Bing Spell Check": "https://settoaugmentresult.cognitiveservices.azure.com/",
+            "Bing Entity Search": "https://settoaugmentresult.cognitiveservices.azure.com/",
+            "Bing Image Search": "https://settoaugmentresult.cognitiveservices.azure.com/",
+            "Bing News Search": "https://settoaugmentresult.cognitiveservices.azure.com/",
+            "Bing Video Search": "https://settoaugmentresult.cognitiveservices.azure.com/",
+            "Bing Web Search": "https://settoaugmentresult.cognitiveservices.azure.com/",
+            "Bing Visual Search": "https://settoaugmentresult.cognitiveservices.azure.com/",
+            "Bing Custom Search": "https://settoaugmentresult.cognitiveservices.azure.com/",
+            "Face": "https://settoaugmentresult.cognitiveservices.azure.com/",
+            "Computer Vision": "https://settoaugmentresult.cognitiveservices.azure.com/",
+            "Text Analytics": "https://settoaugmentresult.cognitiveservices.azure.com/",
+            "LanguageAuthoring": "https://settoaugmentresult.cognitiveservices.azure.com/",
+            "ConversationalLanguageUnderstanding": "https://settoaugmentresult.cognitiveservices.azure.com/",
+            "ConversationalLURuntime": "https://settoaugmentresult.cognitiveservices.azure.com/",
+            "QnAMaker": "https://settoaugmentresult.cognitiveservices.azure.com/",
+            "turing": "https://settoaugmentresult.cognitiveservices.azure.com/",
+            "Turing DeepWrite": "https://settoaugmentresult.cognitiveservices.azure.com/",
+            "QuestionAnswering": "https://settoaugmentresult.cognitiveservices.azure.com/",
+            "QuestionAnsweringBizQA": "https://settoaugmentresult.cognitiveservices.azure.com/",
+            "LUIS.Authoring": "https://settoaugmentresult.cognitiveservices.azure.com/",
+            "LUIS": "https://settoaugmentresult.cognitiveservices.azure.com/",
+            "Unified Speech": "https://settoaugmentresult.cognitiveservices.azure.com/",
+            "Content Moderator - Review": "https://settoaugmentresult.cognitiveservices.azure.com/",
+            "Content Moderator - Moderate": "https://settoaugmentresult.cognitiveservices.azure.com/",
+            "Content Moderator - List Management": "https://settoaugmentresult.cognitiveservices.azure.com/",
+            "TextTranslation-Global": "https://api.cognitive.microsofttranslator.com/",
+            "TextTranslation": "https://settoaugmentresult.cognitiveservices.azure.com/",
+            "DocumentTranslation": "https://settoaugmentresult.cognitiveservices.azure.com/",
+            "DocumentTranslation-V1-1": "https://settoaugmentresult.cognitiveservices.azure.com/",
+            "Token": "https://settoaugmentresult.cognitiveservices.azure.com/",
+            "Container": "https://settoaugmentresult.cognitiveservices.azure.com/",
+            "Speech Services Speech to Text v2.0": "https://settoaugmentresult.cognitiveservices.azure.com/",
+            "Speech Services Speech to Text v3.0": "https://settoaugmentresult.cognitiveservices.azure.com/",
+            "Speech Services Speech to Text v3.1-preview.1": "https://settoaugmentresult.cognitiveservices.azure.com/",
+            "Speech Services Custom Voice": "https://settoaugmentresult.cognitiveservices.azure.com/",
+            "Speech Services Audio Content Creation": "https://settoaugmentresult.cognitiveservices.azure.com/",
+            "Speech Services Speaker Verification": "https://settoaugmentresult.cognitiveservices.azure.com/",
+            "Speech Services Speaker Identification": "https://settoaugmentresult.cognitiveservices.azure.com/",
+            "Custom_Vision_Prediction_3.0": "https://settoaugmentresult.cognitiveservices.azure.com/",
+            "Custom_Vision_Prediction_3.1": "https://settoaugmentresult.cognitiveservices.azure.com/",
+            "Custom_Vision_Training_3.1": "https://settoaugmentresult.cognitiveservices.azure.com/",
+            "Custom_Vision_Training_3.2": "https://settoaugmentresult.cognitiveservices.azure.com/",
+            "Custom_Vision_Training_3.3": "https://settoaugmentresult.cognitiveservices.azure.com/",
+            "FormRecognizer": "https://settoaugmentresult.cognitiveservices.azure.com/"
+        },
+        "provisioningState": "Succeeded"
+    },
+    "identity": {
+        "type": "None",
+        "userAssignedIdentities": {}
+    }
+}
